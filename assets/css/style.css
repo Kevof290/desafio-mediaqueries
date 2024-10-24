@@ -177,3 +177,55 @@ tool-tip {
 .social a:hover {
     color:#fff;
 }
+
+@media (width >= 576px) {
+    .grid-content {
+        grid-template-areas: 
+        "aside aside"
+        "section main"
+        "footer footer";
+        grid-template-rows: 80px calc(100vh - 80px - 80px) 80px;
+    }
+
+    main {
+        overflow-y: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        justify-content: flex-start;
+    }
+
+    section label {
+        margin: 1rem 0 .5rem;
+    }
+
+    .card {
+        width: 42%;
+        text-align: center;
+    }
+
+    .buttons button{
+        width: 40%;
+    }
+
+    .list-items i {
+        display: none;
+    }
+
+    .list-items img {
+        width: 15%
+    }
+
+    .list-items p {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1rem;
+    }
+
+    .list-items p:hover {
+        color: #fed344;
+    }
+}
