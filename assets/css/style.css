@@ -109,6 +109,11 @@ select {
     background-color: #fed344;
 }
 
+.buttons button:hover {
+    background-color: #000;
+    color: #fed344;
+}
+
 .buttons {
     margin: .5rem;
 }
