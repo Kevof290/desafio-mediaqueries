@@ -1,2 +1,3 @@
-Pendientes:
-- Media queries para viewport de tablets y desktop
+Enlace a la web del proyecto.
+
+https://kevof290.github.io/desafio-mediaqueries/
