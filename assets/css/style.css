@@ -112,6 +112,7 @@ select {
 .buttons button:hover {
     background-color: #000;
     color: #fed344;
+    cursor: pointer;
 }
 
 .buttons {
@@ -121,6 +122,7 @@ select {
 .button-desktop {
     display: none;
 }
+
 
 tool-tip {
     position: absolute;
@@ -268,5 +270,19 @@ tool-tip {
     }
     footer {
         text-align: center;
+    }
+    .button-mobile {
+        display: none;
+    }
+    .button-desktop {
+        display:inline;
+        background-color: #fed344;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .buttons button {
+        margin: .5rem;
     }
 }
