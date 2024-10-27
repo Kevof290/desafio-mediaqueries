@@ -162,6 +162,7 @@ tool-tip {
 .pages a:hover {
     background-color: #fed344;
     color: #000;
+    cursor: pointer;
 }
 
 .social {
@@ -227,5 +228,40 @@ tool-tip {
 
     .list-items p:hover {
         color: #fed344;
+        cursor: pointer;
+    }
+}
+
+@media (width >= 992px) {
+    .grid-content {
+        grid-template-areas:
+        "aside section"
+        "aside main"
+        "footer main";
+        grid-template-columns: 250px auto;
+        grid-template-rows: 70px calc(100vh - 70px - 100px) 100px;
+    }
+    .list-items {
+        flex-direction: column;
+    }
+    .list-items img {
+        width: 60%;
+        margin: 0;
+    }
+    .list-items p {
+        padding: .2rem;
+    }
+    section label {
+        margin: .2rem;
+    }
+    select {
+        margin: .2rem;
+        padding: .3rem;
+    }
+    .card {
+        width: 22%;
+    }
+    footer {
+        text-align: center;
     }
 }
